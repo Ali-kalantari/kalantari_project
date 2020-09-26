@@ -1,0 +1,41 @@
+@import "./mq";
+@include mq-add-breakpoint(tabletStarp, 766px);
+@include mq-add-breakpoint(mobileBig, 480px);
+
+// $mq-breakpoints: (
+// mobile         : 320px,
+// mobileBig : 480px
+// tablet    : 740px,
+// desktop: 980px,
+// wide: 1300px);
+
+// RESPONSIVE HEADER 
+.header {
+  @include mq($from: mobile) {
+    padding: 7px 0 7px 0;
+  }
+}
+
+.header__logo {
+  @include mq($from: tablet) {
+    width: 25%;
+  }
+}
+
+.main__row {
+  @include mq($until: tabletStarp) {
+    flex-direction: column-reverse;
+  }
+}
+
+.main--board-btn {
+  @include mq($from: mobileBig, $until: desktop) {
+    width : 144px !important;
+    height: 144px !important;
+  }
+
+  @include mq($from: desktop) {
+    width : 175px !important;
+    height: 175px !important;
+  }
+}

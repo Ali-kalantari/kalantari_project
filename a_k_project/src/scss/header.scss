@@ -1,0 +1,17 @@
+
+.header {
+	background: #1c2a32;
+	box-shadow: #111 1px 0px 7px 0px;
+	border-radius: 0 0 3px 3px;
+	padding: 2px 0 2px 0;
+	
+}
+
+.header__center {
+  display        : flex;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 50%;
+}

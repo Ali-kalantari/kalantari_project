@@ -1,0 +1,385 @@
+
+.containern {
+    width: 80%;
+    /*Orginal Width 1170 */
+    margin: auto;
+  }
+  
+  .containerB {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  /* End main rulez*/
+  
+  /* Start Header */
+  .headern .slidern {
+    background-color: #eee;
+    height: 600px;
+  
+    background-image: url(https://source.unsplash.com/KgjcndVr7tU/1920x1080);
+    background-size: cover;
+  }
+  
+  .headern .slidern .intro {
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .headern .slidern .intro h2 {
+    margin: 0 auto;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #252f31;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    padding: 5px 0;
+  }
+  
+  .headern .slidern .intro button {
+    background: none;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+  
+  
+  
+  /* End Header */
+  
+  
+  
+  /* Start My Skills */
+  .my-skills {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  
+  .my-skills .skills, .my-skills .progress {
+    width: 50%;
+    float: left;
+  }
+  .my-skills .progress{height: 330px;}
+
+
+  .my-skills .progress ul{list-style-type: none;}
+
+
+  .my-skills .skills h2{
+    margin: 25px 0 20px 40px;
+    color: #555;
+  }
+  .my-skills .skills p{
+    margin: 0 0 10px 40px;
+    line-height: 1.5;
+    color: #666;
+    }
+    .my-skills .skills p:last-of-type{
+      margin-top: 15px;
+    }
+    .my-skills .skills button{
+      padding: 10px 30px;
+      margin: 25px 0 20px 40px;
+    }
+    .my-skills .progress .technique {
+      margin-left: 50px;
+    }
+    .my-skills .progress .technique h3{
+      color: #555;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .my-skills .progress .technique div{
+      background-color: #f2f2f2;
+      height: 20px;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+    .my-skills .progress .technique div span{
+      background-color: #2dcc70;
+      width: 80%;
+      height: 20px;
+      display: block;
+      line-height: 20px;
+      text-align: right;
+      color: #fff;
+      font-weight: bold;
+    }
+  /* End My Skills */
+  
+  
+  /* Start Resume */
+  .resume {
+    background-color: #bce9ee;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  .resume h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+  }
+  .resume p{
+    line-height: 1.5;
+    color: #666;
+    padding: 0 40px;
+  }
+  .resume button{
+    margin-top: 15px;
+  }
+  /* End Resume */
+  
+  
+  /* Start Testimonials */
+  .testimonials {
+    background-color: #f2f2f2;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+    .testimonials q{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color:#888;
+    font-family: tahoma,arial;
+  line-height: 1.8;
+  }
+  .testimonials ul{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .testimonials ul li{
+    width: 5px;
+    height: 5px;
+    border: 2px solid #2dcc70;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+  }
+  .testimonials ul li:first-of-type{
+    background-color: #2dcc70;
+  }
+  .testimonials ul li:hover{
+    cursor: pointer;
+    background-color: #2dcc70;
+  }
+  /* End Testimonials */
+  
+  /* Start Portfolio */
+  .portfolio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .portfolio h2{
+    padding: 20px 0 ;
+  }
+  .portfolio p{
+    padding: 10px 0 30px 0 ;
+  }
+  .portfolio .our-work {
+    overflow: hidden;
+  }
+  
+  .portfolio .our-work>div {
+    float: left;
+    width: 33.333333%;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio .our-work>div img {
+    width: 92%;
+    margin: 10px;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 10px 10px #ccc;
+  }
+  /*End Portfolio */
+  
+  
+  /* Start Contact Me */
+  .contact-me {
+    background-color: #252f31;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  
+  .contact-me h2 {
+    color: #fff;
+    margin-left: 40px;
+  }
+  
+  .contact-me p , .contact-me address{
+    color: #6A6E71;
+    margin-left: 40px;
+  }
+  .contact-me p strong{
+    color: #d1d6da;
+  }
+  
+  .contact-me .info, .contact-me .form {
+    width: 45%;
+    float: left;
+  }
+  .contact-me .form{
+    margin-top: 10px;
+    margin-left: 5%;
+  }
+  .contact-me .form label{
+    display: block;
+    color: #d1d6da;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .contact-me .form input[type="text"]{
+    color: #fff;
+    background-color:#4b5557;
+    border: 0;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .contact-me .form input[type="email"]{
+    color: #fff;
+    background-color:#4b5557;
+    border: 0;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .contact-me .form textarea{
+    color: #fff;
+    background-color:#4b5557;
+    border: 0;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .contact-me .form input[type="submit"]{
+    background-color: #191e22;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  /* End Contact Me */
+  
+  
+  /*Start Fototer*/
+  .footer {
+    background-color: #191e22;
+    color: #6A6E71;
+    padding: -10px 0 40px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .footer .footer-folat{
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  .footer ul{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    /*margin-top: 10px;*/
+  }
+  
+  .footer ul li{
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin: 2px;
+    padding: 10px;
+  }
+  .footer ul li a{
+    font-size: 1em;
+  }
+  .footer a{
+    color: #999;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .footer a:hover{
+    color: #2dcc70;
+  }
+  /*End Footer*/
+  
+  /* Start My Framework */
+  .my-button{
+    background: none;
+    border: 2px solid #2dcc70;
+    padding: 10px 30px;
+    color: #2dcc70;
+    font-weight: bold;
+  }
+  .paragrph{
+    line-height: 1.5;
+    color: #666;
+  }
+  .he{
+    color: #555;
+  }
+  .sp{
+    line-height: 1.5;
+    color: #888;
+  }
+  .hr{
+    margin: 30px 0 30px 40px ;
+    background-color: #999;
+    height: 1px;
+    border: 0;
+    width: 95%;
+  }
+  /* End My Framework */
+  /* Start Media Query */
+  
+  @media (max-width: 800px) {
+    
+    .about-me .image {
+      width: 100%;
+    }
+    .about-me .image img {
+      width: 50%;
+      height: 70%;
+      margin: 0 25%;
+    }
+    .about-me .info, .about-me .info .hobbies .content {
+      width: 95%;
+    }
+    .my-skills .skills, .my-skills .progress {
+      width: 50%;
+      float: left;
+    }
+    .resume {
+      width: 100%;
+    }
+    
+    
+    .contact-me .info, .contact-me .form {
+      width: 95%;
+    }
+    .footer .footer-folat {
+      width: 95%;
+    }
+}

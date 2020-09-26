@@ -1,0 +1,330 @@
+@mixin MainDisplayFlex {
+    display        : flex;
+    justify-content: center;
+}
+
+@mixin MainScoreSpan {
+    background-color: #f3f3f3;
+    color           : #0a0a0a;
+    border          : 1px solid #000;
+    border-radius   : 7px;
+    padding         : 0 23px;
+    font-size       : 24px;
+}
+
+.main__row {
+    margin-top: 10px;
+}
+
+//  MAIN RIGHT
+.main__score {
+	margin-bottom: 10px;
+	background-color: #78706c;
+	box-shadow: #000 0 0 7px;
+	border: 3px solid #515151b8;
+	border-radius: 3px;
+}
+.modal-title{
+	color: black;
+}
+
+.main__score p {
+    margin-bottom: 9px !important;
+    margin-top   : 26px !important;
+}
+.modal_nostart {
+	color: blue;
+
+}
+
+.main__text-score {
+    @include MainDisplayFlex;
+    color: black;
+    font-size: 184%;
+}
+
+.main__player-score {
+    display        : flex;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+}
+.modal-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: purple;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: .3rem;
+	outline: 0;
+	background: #313131;
+	border: solid 3px #fff;
+	color: white;
+}
+.main__player-span {
+	background-color: #f3f3f3;
+	color: #0a0a0a;
+	border: 1px solid #000;
+	border-radius: 7px;
+	padding: 0 23px;
+	font-size: 24px;
+	background: black !important;
+	color: #ffe300 !important;
+}
+.main__round-span {
+	background-color: #f3f3f3;
+	color: #0a0a0a;
+	border: 1px solid #000;
+	border-radius: 7px;
+	padding: 0 23px;
+	font-size: 24px;
+	background: black !important;
+	color: #12d820 !important;
+}
+.main__player {
+    text-align: center;
+}
+
+.main__player-p {
+    color      : #fff700;
+    text-shadow: #fff700 1px 4px 20px;
+}
+
+.main__player-span {
+    background-color: skyblue;;
+}
+
+.main__round {
+    text-align : center;
+    color      : #18dc45;
+    text-shadow: #00ff3a 1px 4px 20px;
+}
+
+.main__round-game {
+    @include MainDisplayFlex;
+}
+
+.main__round-span {
+    @include MainScoreSpan;
+}
+
+.main__btn-start {
+    @include MainDisplayFlex;
+    margin: 10px 0;
+}
+
+.main--btn-start {
+    width : 90%;
+    margin: 10px;
+}
+
+//  MAIN LEFT
+.main--board-btn {
+	border: 2px solid black;
+	border-radius: 0px;
+	background-color: #0000;
+	margin: 4px 10px 15px 4px;
+	cursor: pointer;
+	width: 30%;
+	height: 82px;
+	transition: 0.3s all ease-in-out;
+}
+.form-control {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	background: #212121;
+	border: solid 1px #000;
+}
+.main--board-btn:hover {
+    background-color: plum;
+    border          : 2px solid blue;
+    transition      : 0.3s all ease-in-out;
+    transform: scale(1.1);
+    border: 2px dashed #fff;
+}
+.main--btn-start.btn.btn-success {
+	border-radius: 50px;
+}
+.main--board-btn:active {
+    background-color: #008ca1be;
+    transform: scale(0.9, 0.9);
+    transition      : 0.1s all ease-in-out;
+}
+
+.main--board-btn:focus {
+    outline: none;
+}
+
+.main__board-game {
+	background-color: #78706c;
+	box-shadow: #000 0 0 7px;
+	text-align: center;
+	padding: 15px 0;
+	border-radius: 1px;
+}
+
+.main__board-img {
+    width: 55px;
+}
+
+.main__board-table {
+    display: inline;
+}
+
+
+
+
+/// calendar
+
+
+
+$dark-background: #444;
+$dark-backgorund-hover: #333;
+$dark-font-color: #ccc;
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$dark-background: #444;
+$dark-backgorund-hover: #333;
+$dark-header-background: #555;
+$dark-font-color: #ccc;
+$arrow-color: #888;
+$button-background-hover: #666;
+$button-background-focus: #595959;
+$button-padding: 15px;
+$button-border-size: 8px;
+$day-soft-color: #565656;
+
+body {
+  margin: 0;
+  background-color: #777;
+}
+
+.calendar {
+  color: $dark-font-color;
+  float: left;
+  font-family: 'Lato', sans-serif;
+  height: 455px;
+  margin-left: 247px;
+  margin-top: 25px;
+  position: relative;
+  transform: translateX(-50%);
+  width: 400px;
+}
+
+.calendar-header {
+  background-color: $dark-header-background;
+  float: left;
+  font-size: 18px;
+  height: 50px;
+  line-height: 2.78;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.button-container {
+  height: 100%;
+  position: relative;
+
+  &--left {
+    float: left;
+  }
+
+  &--right {
+    float: right;
+  }
+}
+
+.button-content {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  float: left;
+  height: 100%;
+  padding-left: $button-padding;
+  position: relative;
+  transition: background .3s ease;
+
+  &:hover {
+    background-color: $button-background-hover;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &--left {
+    &::before {
+      border-bottom: $button-border-size solid transparent;
+      border-right: $button-border-size solid $arrow-color;
+      border-top: $button-border-size solid transparent;
+      content: '';
+      display: inline-block;
+      height: 0;
+      margin-right: 10px;
+      vertical-align: middle;
+      width: 0;
+
+    }
+  }
+
+  &--right {
+    &::before {
+      border-bottom: $button-border-size solid transparent;
+      border-left: $button-border-size solid $arrow-color;
+      border-top: $button-border-size solid transparent;
+      content: '';
+      display: inline-block;
+      height: 0;
+      margin-right: 10px;
+      vertical-align: middle;
+      width: 0;
+    }
+  }
+}
+
+.week {
+  float: left;
+  width: 100%;
+}
+
+.weekday {
+  background-color: $dark-background;
+  float: left;
+  height: 40px;
+  line-height: 2.5;
+  text-align: center;
+  width: 14.28%;
+}
+
+.day {
+  background-color: $dark-background;
+  box-sizing: border-box;
+  float: left;
+  font-weight: 300;
+  height: 50px;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+  transition: background .2s ease;
+  width: 14.28%;
+  z-index: 999;
+
+  &--soft {
+    color: $day-soft-color;
+  }
+}

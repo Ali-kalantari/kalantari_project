@@ -1,0 +1,21 @@
+ ul{
+     .ali{
+       display: inline-block;
+     margin: 10px;
+       a{
+         color: white;
+         text-decoration: none;
+         font-family: 'Calibri';
+        font-weight: 900;
+         &.active{
+         background-color: #61686a;
+           padding: 10px 20px;
+          color: white;
+         }
+       }
+     }
+   } 
+
+
+   
+
